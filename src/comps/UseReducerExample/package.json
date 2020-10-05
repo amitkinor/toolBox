@@ -1,0 +1,7 @@
+{
+	"name": "use_reducer_example",
+	"description": "using external reducer by utilizing useReducer",
+	"authors": "author",
+	"version": "1.0.0",
+	"main": "./index.js"
+}
