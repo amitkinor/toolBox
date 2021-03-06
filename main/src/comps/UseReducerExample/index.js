@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 
 const initialState = {
   loading: false,
@@ -31,7 +31,9 @@ const delay = (time = 1500) => {
 };
 
 const UseReducerExample = () => {
+  
   const [{ count, loading }, dispatch] = useReducer(reducer, initialState);
+
   const onHandleIncrement = async () => {
     dispatch({ type: 'loading' });
     await delay(500);
