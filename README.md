@@ -1,7 +1,7 @@
 My ongoing toolbox.
 
 # React folder
-1. UseReducerExample
+1. async UseReducerExample
     using external reducer by utilizing useReducer
 2. 
 
