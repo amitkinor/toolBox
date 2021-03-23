@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>
+		Styling console.log() Output Formatting With CSS
+	</title>
+</head>
+<body>
+
+	<h1>
+		Styling console.log() Output Formatting With CSS
+	</h1>
+
+	<script type="text/javascript">
+
+		console.log(
+			"%cAltering the text color",
+			"color: yellow"
+		);
+
+		console.log(
+			"%cAltering the text experience",
+			"background-color: blue ; color: white ; " +
+			"font-size: 20px ; font-style: italic ; text-decoration: underline ; " +
+			"font-family: 'american typewriter' ; text-shadow: 1px 1px 3px black ;"
+		);
+
+		// NOTE: In this demo, inline-block isn't needed in Chrome; but, it is needed in
+		// Firefox or the block properties, like padding, don't work. Trying to use
+		// "block" will work in Chrome; but, will go full-width in Firefox.
+		console.log(
+			"%cAltering the box display",
+			"display: inline-block ; border: 3px solid red ; border-radius: 7px ; " +
+			"padding: 5px ; margin: 5px ;"
+		);
+		// The same CSS styling can be used with many of the other console methods, like
+		// the .group() method.
+		console.group(
+			"%cGrouped Output",
+			"background-color: #e0005a ; color: #ffffff ; font-weight: bold ; padding: 4px ;"
+		);
+		console.log( "Groups are cool for grouped stuff." );
+		console.log( "Totes magotes" );
+		console.groupEnd();
+
+	</script>
+
+</body>
+</html>
